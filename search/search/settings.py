@@ -50,7 +50,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'corsheaders.middleware.CorsMiddleware',
-    'search.middleware.SecurityHeadersMiddleware',
+    
 ]
 
 ROOT_URLCONF = 'search.urls'
@@ -130,21 +130,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 APPEND_SLASH = True
-CORS_ALLOW_ALL_ORIGINS = False
-SECURE_CROSS_ORIGIN_OPENER_POLICY = "same-origin-allow-popups"
-CORS_ALLOW_METHODS = [
-    'GET', 'POST', 'OPTIONS', 'PUT', 'PATCH', 'DELETE'
-]
-CORS_ALLOW_HEADERS = [
-    'content-type', 'authorization', 'x-requested-with'
-]
 
-# Clave secreta para JWT
-SECRET_KEY = 'django-insecure-@ws_01mhqwo-v&139f^(!vo6n&1idh*^0gk4)ce$s6%umhfiz2'
 
-CSP_DEFAULT_SRC = ["'self'"]
-CSP_SCRIPT_SRC = ["'self'", "https://apis.google.com", "https://cloud.google.com", "https://www.gstatic.com"]
-CSP_STYLE_SRC = ["'self'", "'unsafe-inline'"]
-CSP_IMG_SRC = ["'self'", "data:", "https://www.gstatic.com"]
-CSP_FONT_SRC = ["'self'"]
-CSP_FRAME_SRC = ["https://apis.google.com"]
+
+

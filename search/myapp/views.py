@@ -12,7 +12,7 @@ def index(request):
 
 def get_auth_token(request):
     payload = {
-        "iss": "tu-client-id",
+        "iss": "http://31735205742-l72g558ibfdeuvmaht5lrt56fr9d0ra6.apps.googleusercontent.com/",
         "sub": "nelson.gil@iq-online.com",
         "iat": datetime.datetime.utcnow(),
         "exp": datetime.datetime.utcnow() + datetime.timedelta(minutes=60),

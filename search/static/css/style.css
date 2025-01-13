@@ -1,55 +1,54 @@
-/* Estilos generales para el body */
 body {
   display: flex;
-  justify-content: center; /* Centrado en el eje X */
-  align-items: center; /* Centrado en el eje Y */
-  height: 100vh; /* Asegura que el body ocupe el 100% de la altura de la ventana */
-  margin: 0; /* Elimina márgenes predeterminados */
-  background-color: #f8f9fa; /* Fondo claro */
-  font-family: 'Arial', sans-serif; /* Fuentes más legibles */
+  justify-content: center; 
+  align-items: center; 
+  height: 100vh; 
+  margin: 0; 
+  background-color: #f8f9fa; 
+  font-family: 'Arial', sans-serif; 
 }
 
-/* Contenedor principal de búsqueda */
+
 .search-container {
   width: 100%;
-  max-width: 600px; /* Ancho máximo para el contenedor */
+  max-width: 600px; 
   padding: 40px;
   background: white;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil para un toque elegante */
-  border-radius: 8px; /* Bordes redondeados */
-  text-align: center; /* Alineación del contenido en el centro */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  border-radius: 8px; 
+  text-align: center; 
 }
 
-/* Estilo para el campo de entrada de búsqueda */
+
 #searchWidgetTrigger {
-  border-radius: 4px 0 0 4px; /* Bordes redondeados solo a la izquierda */
-  border: 1px solid #ccc; /* Borde sutil */
-  padding: 10px; /* Espaciado interno */
-  font-size: 16px; /* Fuente más grande */
-  width: 80%; /* Ancho del campo de texto */
+  border-radius: 4px 0 0 4px; 
+  border: 1px solid #ccc;
+  padding: 10px; 
+  font-size: 16px; 
+  width: 80%; 
 }
 
-/* Estilo para el botón de búsqueda */
+
 #searchButton {
-  border-radius: 0 4px 4px 0; /* Bordes redondeados solo a la derecha */
-  background-color: #0047AB; /* Color de fondo del botón */
-  border: 1px solid #0047AB; /* Borde del botón */
-  padding: 10px 20px; /* Espaciado interno del botón */
-  color: white; /* Texto en blanco */
-  font-size: 16px; /* Tamaño de fuente más grande */
-  cursor: pointer; /* Cambia el cursor cuando se pasa sobre el botón */
-  transition: background-color 0.3s ease; /* Transición suave en el color de fondo */
+  border-radius: 0 4px 4px 0; 
+  background-color: #0047AB; 
+  border: 1px solid #0047AB; 
+  padding: 10px 20px; 
+  color: white; 
+  font-size: 16px;
+  cursor: pointer; 
+  transition: background-color 0.3s ease; 
 }
 
 #searchButton:hover {
-  background-color: #003580; /* Color de fondo al pasar el mouse */
-  border-color: #003580; /* Color del borde al pasar el mouse */
+  background-color: #003580; 
+  border-color: #003580; 
 }
 
-/* Estilo para los elementos de retroalimentación */
+
 .alert {
   margin-top: 20px;
-  font-size: 14px; /* Fuente más pequeña para las alertas */
+  font-size: 14px;
 }
 
 .alert-info {
@@ -63,18 +62,17 @@ body {
   right: 10px;
 }
 
-/* Hacer el widget y el contenedor responsivos */
 @media (max-width: 767px) {
   .search-container {
       padding: 20px;
-      width: 90%; /* Asegura que el contenedor sea más pequeño en pantallas pequeñas */
+      width: 90%; 
   }
 
   #searchWidgetTrigger {
-      width: 70%; /* El campo de búsqueda se ajusta para pantallas pequeñas */
+      width: 70%; 
   }
 
   #searchButton {
-      width: 28%; /* Ajusta el botón a un tamaño adecuado */
+      width: 28%; 
   }
 }
