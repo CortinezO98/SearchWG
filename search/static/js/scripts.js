@@ -5,18 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   
 
     setAuthToken();
-    
-    searchTrigger.addEventListener("focus", () => toggleWidget(true));
-    searchButton.addEventListener("click", () => {
-      toggleWidget(true);
-      mostrarFeedback("Búsqueda iniciada. Abriendo el widget...");
-    });
-    searchTrigger.addEventListener("keypress", (event) => {
-      if (event.key === "Enter") {
-        toggleWidget(true);
-        mostrarFeedback("Búsqueda iniciada. Abriendo el widget...");
-      }
-    });
   
     function setAuthToken() {
       fetch("/get-auth-token/")
