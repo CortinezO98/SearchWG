@@ -25,10 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
           mostrarFeedback("No se pudo obtener el token de autenticación.");
         });
     }
-  
-    function toggleWidget(show) {
-      searchWidget.hidden = !show;
-    }
+
   
     function mostrarFeedback(mensaje) {
       const alerta = document.createElement("div");
